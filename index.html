@@ -23,62 +23,101 @@
     <link rel="stylesheet" href="css/inicio.css">
 
 <body>
+
+
     <nav class="navbar navbar-expand-lg navbar-colorida">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-       <img src="imagens/med-fiffers.png" alt="Logo da Empresa" class="logo-navbar">
+
+    <!-- LOGO -->
+    <a class="navbar-brand" href="index.html">
+      <img src="imagens/med-fiffers.png" alt="Logo da Empresa" class="logo-navbar">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- BOTÃO MOBILE -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- MENU -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page" href="inicio.html">Início</a>
+        <!-- INÍCIO -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link active" href="index.html">Início</a>
 
-           <ul class="dropdown-menu">
+          <a class="nav-link dropdown-toggle dropdown-toggle-split active"
+             data-bs-toggle="dropdown"
+             aria-expanded="false"></a>
+
+          <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#servicitos">Nossos Serviços</a></li>
-            <li><a class="dropdown-item" href="#">Outro Algo</a></li>
+            <li><a class="dropdown-item" href="#i-sobre">Sobre Nós</a></li>
+            <li><a class="dropdown-item" href="#valores">Valores</a></li>
+            <li><a class="dropdown-item" href="#clientes">Clientes</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Mds uma Linha</a></li>
+            <li><a class="dropdown-item" href="#contato">Contato</a></li>
           </ul>
         </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+        <!-- SERVIÇOS -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link " href="servicos.html">Serviços</a>
+
+          <a class="nav-link dropdown-toggle dropdown-toggle-split suma"
+             data-bs-toggle="dropdown"
+             aria-expanded="false"></a>
+
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Algo</a></li>
             <li><a class="dropdown-item" href="#">Outro Algo</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Mds uma Linha</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            SubMenus
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Algo</a></li>
-            <li><a class="dropdown-item" href="#">Outro Algo</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Mds uma Linha</a></li>
+            <li><a class="dropdown-item" href="#contato">Contato</a></li>
           </ul>
         </li>
-        
+
+        <!-- sobre nós -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="sobre.html">Sobre Nós</a>
+
+          <a class="nav-link dropdown-toggle dropdown-toggle-split suma"
+             data-bs-toggle="dropdown"
+             aria-expanded="false"></a>
+
+          <ul class="dropdown-menu">
+           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#sobre">Sobre Nós</a></li>
+            <li><a class="dropdown-item" href="#equipe">Equipe</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#contato">Contato</a></li>
+          </ul>
+          </ul>
+        </li>
+
+
+        <!-- contato -->
+        <li class="nav-item d-flex align-items-center">
+          <a class="nav-link" href="contato.html">Contato</a>         
+        </li>
       </ul>
+
+      <!-- BUSCA -->
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <input class="form-control me-2" type="search"
+               placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-info" type="submit">
-          <!--Vou por um icone de lupa aqui-->
           <i class="bi bi-search"></i>
-         
         </button>
       </form>
+
     </div>
   </div>
 </nav>
-
+  
   <!--Acho que é um resumo do que eles fazem-->
       <div class="introducao">
   <h1>
@@ -99,11 +138,8 @@
         <div class="card h-100">
           <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="Serviço 1">
           <div class="card-body">
-            <h5 class="card-title">REFRIGERAÇÃO COMERCIAL</h5>
-            <p class="card-text">Reparos de compressores; <br>
-            Torres de resfriamento;<br>
-            Manutenção e Instalação de Splits;<br>
-            Inspeção de câmaras de abastecimento.
+            <h5 class="card-title">REFRIGERAÇÃO</h5>
+            <p class="card-text">Manutenção e reparo de sistemas de refrigeração naval, incluindo compressores, câmaras frigoríficas e controle térmico para embarcações e operações portuárias.
           </p>
             <a href="#" class="btn btn-primary">Saiba Mais</a>
           </div>
@@ -115,11 +151,8 @@
         <div class="card h-100">
           <img src="https://picsum.photos/400/300?random=2" class="card-img-top" alt="Serviço 2">
           <div class="card-body">
-            <h5 class="card-title">REFRIGERAÇÃO NAVAL</h5>
-            <p class="card-text">Reparos de compressores; <br>
-            Torres de resfriamento;<br>
-            Manutenção e Instalação de Splits;<br>
-            Inspeção de câmaras de abastecimento.
+            <h5 class="card-title">SERVIÇOS DE ELÉTRICA</h5>
+            <p class="card-text">Manutenção elétrica naval em painéis, motores, geradores e sistemas elétricos, garantindo segurança operacional e confiabilidade dos equipamentos.
           </p>
             <a href="#" class="btn btn-primary">Saiba Mais</a>
           </div>
@@ -131,8 +164,10 @@
         <div class="card h-100">
           <img src="https://picsum.photos/400/300?random=3" class="card-img-top" alt="Serviço 3">
           <div class="card-body">
-            <h5 class="card-title">HIDRÁULICA & BOMBAS</h5>
-            <p class="card-text">Nesses serviços eles servem mais ou menos este tipo de servimento desse jeito ó</p>
+            <h5 class="card-title">TRATAMENTO, LIMPEZA E PINTURA</h5>
+            <p class="card-text">Execução de serviços de tratamento de superfícies, limpeza técnica e pintura naval,
+  assegurando proteção contra corrosão, integridade estrutural e conformidade com
+  os padrões técnicos exigidos para operações marítimas.</p>
             <a href="#" class="btn btn-primary">Saiba Mais</a>
           </div>
         </div>
@@ -143,8 +178,8 @@
         <div class="card h-100">
           <img src="https://picsum.photos/400/300?random=4" class="card-img-top" alt="Serviço 4">
           <div class="card-body">
-            <h5 class="card-title">ELÉTRICA & MOTORES</h5>
-            <p class="card-text">Nesses serviços eles servem mais ou menos este tipo de servimento desse jeito ó</p>
+            <h5 class="card-title">PEÇAS DE REPOSIÇÃO</h5>
+            <p class="card-text">Fornecimento de peças de reposição navais e componentes técnicos, atendendo às especificações e normas do setor marítimo.</p>
             <a href="#" class="btn btn-primary">Saiba Mais</a>
           </div>
         </div>
@@ -155,8 +190,8 @@
         <div class="card h-100">
           <img src="https://picsum.photos/400/300?random=5" class="card-img-top" alt="Serviço 5">
           <div class="card-body">
-            <h5 class="card-title">USINAGEM</h5>
-            <p class="card-text">Nesses serviços eles servem mais ou menos este tipo de servimento desse jeito ó</p>
+            <h5 class="card-title">SOLDAGEM</h5>
+            <p class="card-text">Serviços de soldagem naval para reparos estruturais, reforços metálicos e manutenção corretiva em embarcações e estruturas marítimas.</p>
             <a href="#" class="btn btn-primary">Saiba Mais</a>
           </div>
         </div>
@@ -167,8 +202,8 @@
         <div class="card h-100">
           <img src="https://picsum.photos/400/300?random=6" class="card-img-top" alt="Serviço 6">
           <div class="card-body">
-            <h5 class="card-title">TESTE DE CARGA</h5>
-            <p class="card-text">Nesses serviços eles servem mais ou menos este tipo de servimento desse jeito ó</p>
+            <h5 class="card-title">SERVIÇOS DE GUINDASTE</h5>
+            <p class="card-text">Manutenção, inspeção e testes de carga em guindastes navais, assegurando operação segura e conforme normas técnicas.</p>
             <a href="#" class="btn btn-primary">Saiba Mais</a>
           </div>
         </div>
@@ -179,8 +214,8 @@
         <div class="card h-100">
           <img src="https://picsum.photos/400/300?random=7" class="card-img-top" alt="Serviço 7">
           <div class="card-body">
-            <h5 class="card-title">SERVIÇOS SUBAQUÁTICOS</h5>
-            <p class="card-text">Nesses serviços eles servem mais ou menos este tipo de servimento desse jeito ó</p>
+            <h5 class="card-title">CALDERARIA</h5>
+            <p class="card-text">Serviços de caldeiraria naval para fabricação, ajuste e reparo de estruturas metálicas, tubulações e componentes industriais marítimos.</p>
             <a href="#" class="btn btn-primary">Saiba Mais</a>
           </div>
         </div>
@@ -191,8 +226,8 @@
         <div class="card h-100">
           <img src="https://picsum.photos/400/300?random=8" class="card-img-top" alt="Serviço 8">
           <div class="card-body">
-            <h5 class="card-title">Serviço 8</h5>
-            <p class="card-text">Nesses serviços eles servem mais ou menos este tipo de servimento desse jeito ó</p>
+            <h5 class="card-title">TUBULAÇÕES</h5>
+            <p class="card-text">Instalação e manutenção de tubulações navais para água, óleo, ar e fluidos industriais, garantindo vedação e eficiência operacional.</p>
             <a href="#" class="btn btn-primary">Saiba Mais</a>
           </div>
         </div>
@@ -203,8 +238,194 @@
   </div>
  </div>
 
+    <!-- Parte do Sobre-->
+     <section class="sobre-section">
+  <div class="container">
+
+    <!-- Título -->
+   <section class="sobre-section">
+  <div class="container">
+
+    <!-- Título -->
+    <div class="subt mb-5">
+      <h2 class="servi" id="i-sobre">SOBRE NÓS</h2>
+    </div>
+
+    <!-- Cards verticais -->
+    <div class="home-sobre-cards-verticais">
+
+      <div class="card sobre-card-vertical mb-5">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-3 text-center sobre-icone-wrapper">
+            <i class="bi bi-geo-alt-fill sobre-icone"></i>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5>Sede Estratégica</h5>
+              <p>
+               Com base em Santos (SP), a Mec Reefer atua em um dos principais polos portuários do país, garantindo agilidade, logística eficiente e rápido acesso às embarcações.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card sobre-card-vertical mb-5">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-3 text-center sobre-icone-wrapper">
+            <i class="bi bi-globe2 sobre-icone"></i>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5>Atuação Global</h5>
+              <p>
+                Atendemos navios e operações marítimas em todo o mundo, com equipes qualificadas disponíveis 24 horas por dia para oferecer soluções rápidas e seguras.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card sobre-card-vertical mb-5">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-3 text-center sobre-icone-wrapper">
+            <i class="bi bi-shield-check sobre-icone"></i>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5>Excelência Técnica</h5>
+              <p>
+                Com mais de 25 anos de experiência, oferecemos serviços completos em refrigeração naval, elétrica, mecânica, usinagem e manutenção, sempre com alto padrão de qualidade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card sobre-card-vertical mb-5">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-3 text-center sobre-icone-wrapper">
+            <i class="bi bi-tools sobre-icone"></i>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5>Confiança e Compromisso</h5>
+              <p>
+                Somos uma empresa familiar que valoriza parcerias duradouras, segurança, respeito ao meio ambiente e a satisfação de clientes e colaboradores.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botão Saiba Mais -->
+      <div class="text-center mt-4">
+        <a href="sobre.html" class="btn btn-primary btn-saiba-mais">
+          Saiba Mais
+        </a>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+    <!--Parte de missão e valores-->
+    <section class="jeito-section">
+  <div class="container-jeito">
+
+    <h2 class="jeito-titulo" id="valores">MISSÃO, VALORES E OBJETIVOS</h2>
+
+    <p class="jeito-intro">
+      Na Mec Reefer, acreditamos que bons serviços começam com boas relações.
+      Por trás de cada atendimento, existem pessoas comprometidas, que cuidam
+      de cada detalhe com responsabilidade e respeito.
+    </p>
+
+    <div class="jeito-blocos">
+
+      <div class="jeito-item">
+        <h3>NO QUE ACREDITAMOS</h3>
+        <hr>
+        <p>
+          Valorizamos a honestidade, a confiança e a escuta ativa.
+          Cada cliente, parceiro e colaborador faz parte da nossa história.
+        </p>
+      </div>
+
+      <div class="jeito-item">
+        <h3>COMO TRABALHAMOS</h3>
+         <hr>
+        <p>
+          Atuamos com agilidade, segurança e comprometimento, sempre seguindo
+          normas técnicas e cuidando do meio ambiente.
+        </p>
+      </div>
+
+      <div class="jeito-item">
+        <h3>O QUE ENTREGAMOS</h3>
+         <hr>
+        <p>
+          Entregamos mais do que serviços: oferecemos tranquilidade, parceria
+          e confiança em cada operação realizada.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+          <section class="clientes-section">
+  <div class="clientes-container">
+
+    <h2 class="clientes-titulo" id="clientes">Clientes que Confiam em Nosso Trabalho</h2>
+
+    <div class="clientes-bolinhas">
+
+      <a href="https://www.linkedin.com/redir/redirect?url=http%3A%2F%2Fwww%2Eloginlogistica%2Ecom%2Ebr&urlhash=NCjb&trk=about_website" target="_blank" class="cliente-bolinha">
+        <img src="imagens/login.jpg" alt="Cliente 1">
+      </a>
+
+      <a href="https://www.alianca.com.br/" target="_blank" class="cliente-bolinha">
+        <img src="imagens/alian.avif" alt="Cliente 2">
+      </a>
+
+      <a href="https://www.instagram.com/ics_oficial/" target="_blank" class="cliente-bolinha">
+        <img src="imagens/iate.png" alt="Cliente 3">
+      </a>
+
+      <a href="https://www.marinha.mil.br/" target="_blank" class="cliente-bolinha">
+        <img src="imagens/marinha.png" alt="Cliente 4">
+      </a>
+
+      <a href="https://www.granel.com.br/" target="_blank" class="cliente-bolinha">
+        <img src="imagens/od.jpg" alt="Cliente 5">
+      </a>
+
+      <a href="https://www.sabesp.com.br/" target="_blank" class="cliente-bolinha">
+        <img src="imagens/sabesp.png" alt="Cliente 6">
+      </a>
+
+      <a href="https://www.hoteljequitimar.com.br/" target="_blank" class="cliente-bolinha">
+        <img src="imagens/sofitel.jpg" alt="Cliente 7">
+      </a>
+
+      <a href="https://www.maersk.com/pt-br/hamburgsud" target="_blank" class="cliente-bolinha">
+        <img src="imagens/sud.webp" alt="Cliente 8">
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+
       <!--I can be your footernote -->
-    <footer class="footer">
+    <footer class="footer"    id="contato">
       <div class="footer-container">
 
         <!-- Informações / Direitos -->
@@ -227,20 +448,20 @@
 
                       <li>
                         <i class="bi bi-telephone"></i>
-                        <a href="#">Numero de alguem:</a>
-                        <a href="tel:************">+55 13 11111-2222</a>
+                        <a href="#">Número Fixo:</a>
+                        <a href="tel:************">+55 13 3223-6406</a>
                       </li>
 
                       <li>
                         <i class="bi bi-telephone"></i>
-                        <a href="#">Numero de alguem:</a>
-                        <a href="tel:************">+55 13 11111-2222</a>
+                        <a href="#">Número Mobile:</a>
+                        <a href="tel:************">+55 13 99729-7083</a>
                       </li>
 
 
                       <li>
                         <i class="bi bi-geo-alt"></i>
-                        Rua Aquelinha lá, 123 – Porto / Santos – SP
+                        Rua General Câmara, 239 – Centro / Santos – SP
                       </li>
                     </ul>
                   </address>
@@ -270,5 +491,29 @@
     
     <!--Java Script do BootStrap-->
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <button id="btn-topo" title="Voltar ao topo" aria-label="Voltar ao topo">
+  <i class="bi bi-arrow-up-short"></i>
+</button>
+
+<script>
+  const btnTopo = document.getElementById("btn-topo");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btnTopo.style.display = "flex";
+    } else {
+      btnTopo.style.display = "none";
+    }
+  });
+
+  btnTopo.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
 </body>
 </html>

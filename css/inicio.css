@@ -24,6 +24,27 @@
   transform: scale(1.1) rotate(-5deg);
 }
 
+/* Aproxima a seta do texto */
+.navbar .dropdown-toggle-split {
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
+  
+}
+
+/* Aumenta levemente o tamanho da seta */
+.navbar .dropdown-toggle::after {
+  font-size: 0.9rem;   /* padrão é menor */
+}
+
+/* Opcional: alinha melhor verticalmente */
+.navbar .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  color:  rgb(0, 47, 107);
+}
+
+
+
 /* Aviadamento do icone, que vai ser a foto */
 
 /* Logo da navbar */
@@ -168,6 +189,7 @@
 }
 
 
+
 .servi{
     font-family: "Bebas Neue", sans-serif;
     font-size: 3rem ;
@@ -175,6 +197,7 @@
     letter-spacing: 3px;
     color: rgb(70, 70, 181);
 }
+
 
 /* Parte dos serviços*/
 .servicos-section {
@@ -363,3 +386,302 @@
   color: #ffc107;
 }
 
+/* ===============================
+   SEÇÃO SOBRE
+================================ */
+.sobre-section {
+  background: linear-gradient(180deg, #d9e4ff 0%, #6f93d5 100%);
+  padding: 80px 20px;
+}
+
+/* TÍTULO */
+.sobre-section .subt h2 {
+  text-align: center;
+  color: #00336b;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* CONTAINER */
+.home-sobre-cards-verticais {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.sobre-card-vertical {
+  border: none;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  transition: all 0.35s ease;
+}
+
+.sobre-card-vertical:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.2);
+}
+
+/* FLEX QUE NÃO QUEBRA */
+.sobre-card-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* ÍCONE */
+.sobre-icone-wrapper {
+  flex: 0 0 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-icone {
+  font-size: 3.8rem;
+  background: linear-gradient(135deg, #0d6efd, #6f9cff);
+ background-clip: text;              /* padrão */
+-webkit-background-clip: text;      /* Chrome / Safari */
+-webkit-text-fill-color: transparent;
+
+}
+
+/* TEXTO */
+.sobre-conteudo {
+  flex: 1;
+}
+
+.sobre-card-vertical .card-body {
+  padding: 30px;
+}
+
+.sobre-card-vertical h5 {
+  color: #00336b;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.sobre-card-vertical p {
+  color: #000241;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* BOTÃO */
+.btn-saiba-mais {
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #02265d, #314674);
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-saiba-mais:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(13, 110, 253, 0.4);
+}
+
+/* MOBILE (NÃO ALTERNA) */
+@media (max-width: 768px) {
+  .sobre-card-flex {
+    flex-direction: row;
+  }
+}
+
+
+
+
+/* ===============================
+   MISSÃO VALORES E NUM SEI O QUE
+================================ */
+.jeito-section {
+
+  padding: 80px 20px;
+}
+
+/* CONTAINER */
+.container-jeito {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TÍTULO */
+.jeito-titulo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #00336b;
+  margin-bottom: 20px;
+}
+
+/* TEXTO DE ABERTURA */
+.jeito-intro {
+  font-size: 1.05rem;
+  color: #02003a;
+  line-height: 1.8;
+  max-width: 720px;
+  margin: 0 auto 60px;
+}
+
+/* BLOCOS */
+.jeito-blocos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ITEM */
+.jeito-item h3 {
+  font-size: 1.2rem;
+  color: #1a3d7e;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.jeito-item p {
+  font-size: 0.95rem;
+  color: #00318d;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.jeito-item{
+  background-color: #fff9d9;
+  border-radius: 20px;
+  padding: 20px;
+  border: double  #ffc107;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .jeito-blocos {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .jeito-titulo {
+    font-size: 2rem;
+  }
+}
+
+
+/*Parte dos clientes*/
+
+/* ===============================
+   SEÇÃO CLIENTES
+================================ */
+.clientes-section {
+   background: linear-gradient(180deg,#7b9cdb 0%, #d5f4ff 100%);
+  padding: 80px 20px;
+}
+
+/* CONTAINER */
+.clientes-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TÍTULO */
+.clientes-titulo {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #00336b;
+  margin-bottom: 50px;
+}
+
+/* GRID DAS BOLINHAS */
+.clientes-bolinhas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+/* BOLINHA */
+.cliente-bolinha {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #f5f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* LOGO */
+.cliente-bolinha img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  filter: grayscale(10%);
+  transition: all 0.3s ease;
+}
+
+/* HOVER SUAVE */
+.cliente-bolinha:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cliente-bolinha:hover img {
+  filter: grayscale(0%);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .clientes-bolinhas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+
+#btn-topo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: none;
+
+  background: linear-gradient(135deg, #0055aa, #00336b);
+  color: #fff;
+
+  font-size: 26px;
+
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+#btn-topo:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #0077ff, #0055aa);
+}

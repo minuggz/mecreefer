@@ -3,16 +3,417 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços</title>
+    <title>MEC REEFER | SERVIÇOS</title>
 
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- Meu CSS -->
-     <link rel="stylesheet" href="servico.css">
+     <link rel="stylesheet" href="css/servico.css">
 </head>
 <body>
+   <nav class="navbar navbar-expand-lg navbar-colorida">
+  <div class="container-fluid">
+
+    <!-- LOGO -->
+    <a class="navbar-brand" href="index.html">
+      <img src="imagens/med-fiffers.png" alt="Logo da Empresa" class="logo-navbar">
+    </a>
+
+    <!-- BOTÃO MOBILE -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- INÍCIO -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="index.html">Início</a>
+
+          <a class="nav-link dropdown-toggle dropdown-toggle-split suma"
+             data-bs-toggle="dropdown"
+             aria-expanded="false"></a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#servicitos">Nossos Serviços</a></li>
+            <li><a class="dropdown-item" href="#i-sobre">Sobre Nós</a></li>
+            <li><a class="dropdown-item" href="#valores">Valores</a></li>
+            <li><a class="dropdown-item" href="#clientes">Clientes</a></li>
+            <li><a class="dropdown-item" href="#contato">Contato</a></li>
+          </ul>
+        </li>
+
+        <!-- SERVIÇOS -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link active" href="servicos.html">Serviços</a>
+
+          <a class="nav-link dropdown-toggle dropdown-toggle-split active"
+             data-bs-toggle="dropdown"
+             aria-expanded="false"></a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Algo</a></li>
+            <li><a class="dropdown-item" href="#">Outro Algo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Mds uma Linha</a></li>
+            <li><a class="dropdown-item" href="#contato">Contato</a></li>
+          </ul>
+        </li>
+
+        <!-- sobre nos -->
+        <li class="nav-item dropdown d-flex align-items-center">
+          <a class="nav-link" href="sobre.html">Sobre Nós</a>
+
+          <a class="nav-link dropdown-toggle dropdown-toggle-split suma"
+             data-bs-toggle="dropdown"
+             aria-expanded="false"></a>
+
+          <ul class="dropdown-menu">
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#sobre">Sobre Nós</a></li>
+            <li><a class="dropdown-item" href="#equipe">Equipe</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#contato">Contato</a></li>
+          </ul>
+          </ul>
+        </li>
+
+        <!-- contato -->
+        <li class="nav-item d-flex align-items-center">
+          <a class="nav-link" href="contato.html">Contato</a>         
+        </li>
+
+      </ul>
+
+      <!-- BUSCA -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search"
+               placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+  <!-- Parte dos SERVIÇOS-->
+      <div class="titulos mt-4">
+     <h2 class="servi">NOSSOS SERVIÇOS</h2>
+        </div>
+
+  <section class="servicos-fpattern">
+
+    <!-- BLOCO 4 – Texto longo -->
+  <div class="fp-bloco texto-largo">
+    <h3>OQUE FAZEMOS</h3>
+    <p>
+      Manutenção e Instalações de sistemas de ar condicionado;   <br>
+      Manutenção e Instalações de câmaras de provisão;<br>
+      Reparos gerais - Siderúrgicas - Unsinagem - Soldas;<br>
+      Serviços elétricos - Motores elétricos - Reparos de geradores - Rebobinamentos;<br>
+      Serviços de motor - Motor principal e Auxiliar - Bombas e outros serviços;<br>
+      Serviços de guindaste - Eletro / hidráulica - Reparos e Testes de sobrecarga;<br>
+      Bote Salva-vidas;<br>
+      Serviços subaquáticos;<br>
+      Peças de reposição;<br>
+      Assistência técnica eletrônica;<br>
+      Equipamento de ponte - Radar, Giroscópio, Ajuste da bússola magnética.
+    </p>
+  </div>
+
+  <!-- BLOCO 1 – Destaque -->
+  <div class="fp-bloco destaque">
+    <div class="fp-texto">
+      <section class="servico-refrigeracao">
+  <h3>Serviços de Refrigeração Naval</h3>
+
+  <h4>Controle de Temperatura e Climatização</h4>
+  <p>
+    Em ambientes de climatização controlada, a refrigeração é responsável por
+    <strong>manter a temperatura adequada de cargas</strong> perecíveis ou sensíveis, como
+    alimentos, produtos químicos e gases liquefeitos.
+  </p>
+
+  <p>
+    Dependendo da configuração do navio, a mesma planta de refrigeração ou
+    unidades independentes podem ser utilizadas para atender diferentes áreas
+    de suprimento e compartimentos refrigerados.
+  </p>
+
+  <h4>Finalidade do Sistema de Refrigeração</h4>
+  <p>
+    O principal objetivo do sistema de refrigeração naval é garantir que cargas
+    e materiais perecíveis sejam <strong>transportados em condições seguras</strong>, preservando
+    sua qualidade e integridade durante toda a viagem.
+  </p>
+
+  <ul>
+    <li>Prevenção do crescimento de microrganismos</li>
+    <li>Redução de processos de oxidação</li>
+    <li>Controle de fermentação indesejada</li>
+    <li>Evita a desidratação e deterioração da carga</li>
+  </ul>
+</section>
+
+    </div>
+
+    <div class="fp-imagem">
+      <img src="https://picsum.photos/300/200?random=1" alt="Serviço Mec Reefer">
+    </div>
+  </div>
+
+  <!-- BLOCO 2 – Texto à esquerda -->
+  <div class="fp-bloco">
+    <div class="fp-texto">
+      <h3>SERVIÇOS DE ELÉTRICA</h3>
+      <p class="intro">
+  A Mec Reefer oferece serviços especializados de manutenção elétrica naval,
+  atendendo embarcações de diferentes portes e aplicações.
+</p>
+
+<h4>Atuação Técnica</h4>
+<p>
+  Nossos serviços estão disponíveis para navios de carga, cruzeiros e
+  embarcações especiais, independentemente da idade ou complexidade.
+</p>
+
+<h4>Principais Serviços</h4>
+<ul>
+  <li>Painéis elétricos principais e secundários</li>
+  <li>Sistemas de baixa tensão</li>
+  <li>Instalações em áreas técnicas e cabines</li>
+  <li>Equipamentos de convés e sistemas auxiliares</li>
+</ul>
+
+    </div>
+
+    <div class="fp-imagem">
+      <img src="https://picsum.photos/300/150?random=2" alt="Manutenção">
+    </div>
+  </div>
+
+  <!-- BLOCO 2 – Texto à esquerda -->
+  <div class="fp-bloco">
+    <div class="fp-texto">
+      <h3>PEÇAS DE REPOSIÇÃO E USINAGEM</h3>
+      <div>
+  <p class="intro">O nosso fornecimento abrange todo um mundo de peças sobressalentes, desde os menores itens, como um fusível, até as maiores peças sobressalentes do motor para motores elétricos e auxiliares, separadores, bem como tudo em peças.</p>
+
+  <p>Um relacionamento forte e duradouro, construído com nossa rede de fornecedores, garante eficiência e assegura a entrega de peças de reposição genuínas e OEM em curto prazo no porto de Santos - Brasil.</p>
+
+  <p>Evite problemas desnecessários e <strong>economize tempo e dinheiro</strong> ao mesmo tempo com nossos serviços de peças sobressalentes.</p>
+</div>
+
+    </div>
+
+    <div class="fp-imagem">
+      <img src="https://picsum.photos/300/150?random=2" alt="Manutenção">
+    </div>
+  </div>
+
+  <!-- BLOCO 2 – Texto à esquerda -->
+  <div class="fp-bloco">
+    <div class="fp-texto">
+      <h3>SOLDAGEM</h3>
+     <p class="intro">Nossa equipe é especializada e treinada para executar processos complexos de solda, desde a produção de novas peças até reparos e aplicação de revestimentos, assegurando eficiência e qualidade em cada projeto.</p>
+  <p>A <strong>soldagem</strong> é essencial na fabricação e manutenção de peças metálicas na <strong>indústria naval</strong>. Trabalhamos com diferentes tipos de metais, garantindo <strong>alta resistência, acabamento e durabilidade</strong> para estruturas que sofrem desgaste intenso ao longo do tempo.</p>
+  
+  
+    </div>
+
+    <div class="fp-imagem">
+      <img src="https://picsum.photos/300/150?random=2" alt="Manutenção">
+    </div>
+  </div>
+
+  <!-- BLOCO 2 – Texto à esquerda -->
+  <div class="fp-bloco">
+    <div class="fp-texto">
+      <h3>SERVIÇOS DE GUINDASTE</h3>
+      <p>
+        <h4>Manutenção de Guinchos em Navios</h4>
+  
+  <p class="intro">A maioria dos guinchos a bordo é acionada por <strong>motores elétricos</strong> ou por <strong>óleo hidráulico pressurizado</strong>, permitindo o levantamento de cargas variadas com o auxílio de engrenagens.</p>
+  
+  <p>A inspeção regular das engrenagens e eixos permite avaliar desgaste e uso da maquinaria. Nossa equipe especializada realiza inspeções detalhadas em sistemas hidráulicos de guinchos e lemes, verificando:</p>
+  <ul>
+    <li>Perda de pressão</li>
+    <li>Vazamentos</li>
+    <li>Segurança do sistema</li>
+  </ul>
+  
+  <p>A realização de <strong>teste de sobrecarga</strong> garante que o serviço seja seguro e eficiente.</p>
+      </p>
+    </div>
+
+    <div class="fp-imagem">
+      <img src="https://picsum.photos/300/150?random=2" alt="Manutenção">
+    </div>
+  </div>
+  
+
+   <!-- BLOCO 2 – Texto à esquerda -->
+  <div class="fp-bloco">
+    <div class="fp-texto">
+      <h3>CALDEIRARIA</h3>
+      <p>
+        <h4>Serviços Industriais para Embarcações e Plataformas</h4>
+
+  <p>Prestamos serviços industriais para <strong>embarcações</strong> e <strong>plataformas offshore e onshore</strong>, atuando nas áreas de caldeiraria, tubulação, usinagem e fabricação de peças metálicas.</p>
+
+  <p>Nossa equipe de caldeireiros é especializada na fabricação de estruturas e recipientes em chapas de aço, como tanques, reservatórios e caldeiras. O trabalho envolve o planejamento, a traçagem das peças e a interpretação de desenhos técnicos, garantindo montagem precisa, segurança e qualidade.</p>
+</div>
+
+    <div class="fp-imagem">
+      <img src="https://picsum.photos/300/150?random=2" alt="Manutenção">
+    </div>
+  </div>
+
+
+  <!-- BLOCO 2 – Texto à esquerda -->
+  <div class="fp-bloco">
+    <div class="fp-texto">
+      <h3>TUBULAÇÕES</h3>
+      
+  <h4>Soluções em Manutenção com a Mec Reefer</h4>
+
+  <p>As soluções em manutenção da <strong>Mec Reefer</strong> são completas e eficientes. Realizamos aplicações de <strong>sistemas de água</strong> e <strong>resfriamento a bordo</strong>, além de reparos, trocas e ajustes que aumentam a <strong>segurança</strong>, o <strong>conforto dos passageiros</strong> e a <strong>eficiência operacional</strong> do navio.</p>
+
+  <p>Nossos serviços contribuem para a redução dos custos gerais de manutenção e minimizam os tempos de paralisação. Garantimos ainda o transporte seguro de <strong>água potável</strong> e outros <strong>fluidos de processo</strong> a bordo, preservando sua qualidade.</p>
+</div>
+
+
+    <div class="fp-imagem">
+      <img src="https://picsum.photos/300/150?random=2" alt="Manutenção">
+    </div>
+  </div>
+
+
+  <!-- BLOCO 2 – Texto à esquerda -->
+  <div class="fp-bloco">
+    <div class="fp-texto">
+      <h3>TRATAMENTO, LIMPEZA E PINTURA</h3>
+      
+   <h4>Tratamento de Superfícies e Pintura Naval</h4>
+
+  <p>Oferecemos serviços de <strong>tratamento, limpeza e pintura</strong> para estruturas e equipamentos navais, garantindo maior <strong>proteção</strong>, <strong>durabilidade</strong> e <strong>acabamento</strong>.</p>
+
+  <p>Os processos incluem preparação de superfícies, remoção de corrosão e aplicação de pinturas técnicas, contribuindo para a <strong>preservação</strong> das estruturas e a <strong>segurança operacional</strong> da embarcação.</p>
+</div>
+
+    <div class="fp-imagem">
+      <img src="https://picsum.photos/300/150?random=2" alt="Manutenção">
+    </div>
+  </div>
+  
+  </div>
+
+  
+
+</section>
+
+
+
+
+
+<!--I can be your footernote -->
+    <footer class="footer"    id="contato">
+      <div class="footer-container">
+
+        <!-- Informações / Direitos -->
+        <section class="footer-copy">
+          <p>
+            ©2026 por Mecreefer Refrigeração e Reparos Navais
+          </p>
+        </section>
+
+        <!--Parte de email,  numero e endereço do rodapé-->
+
+        <!-- Parte de email, número e endereço do rodapé -->
+                <section class="footer-contact">
+                  <address>
+                    <ul>
+                      <li>
+                        <i class="bi bi-envelope"></i>
+                        <a href="mailto:mec-reefer@hotmail.com">mec-reefer@hotmail.com</a>
+                      </li>
+
+                      <li>
+                        <i class="bi bi-telephone"></i>
+                        <a href="#">Número Fixo:</a>
+                        <a href="tel:************">+55 13 3223-6406</a>
+                      </li>
+
+                      <li>
+                        <i class="bi bi-telephone"></i>
+                        <a href="#">Número Mobile:</a>
+                        <a href="tel:************">+55 13 99729-7083</a>
+                      </li>
+
+
+                      <li>
+                        <i class="bi bi-geo-alt"></i>
+                        Rua General Câmara, 239 – Centro / Santos – SP
+                      </li>
+                    </ul>
+                  </address>
+                </section>
+
+
+        <!-- Redes sociais -->
+        <nav class="footer-social" aria-label="Redes sociais">
+          <ul>
+            <li>
+              <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </footer>
+
+
     
+    <!--Java Script do BootStrap-->
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    
+    <button id="btn-topo" title="Voltar ao topo" aria-label="Voltar ao topo">
+  <i class="bi bi-arrow-up-short"></i>
+</button>
+
+<script>
+  const btnTopo = document.getElementById("btn-topo");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      btnTopo.style.display = "flex";
+    } else {
+      btnTopo.style.display = "none";
+    }
+  });
+
+  btnTopo.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
 </body>
 </html>

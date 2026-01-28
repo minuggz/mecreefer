@@ -4,6 +4,18 @@
 /*Fonte de Textos*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@100..900&display=swap');
 
+
+body {
+  font-family: 'Lexend', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+
+
 .navbar-colorida {
   background: linear-gradient(90deg, rgb(0, 47, 107), rgb(0, 75, 150));
   height: 120px; /* ajustei para ficar elegante */
@@ -251,85 +263,12 @@
   color: #ffc107;
 }
 
-/*parte dos serviços*/
-
 .servi{
     font-family: "Bebas Neue", sans-serif;
     font-size: 3rem ;
     font-weight: 900;
     letter-spacing: 3px;
     color: rgb(70, 70, 181);
-}
-
-.fp-imagem img {
-  border-radius: 16px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-}
-
-.fp-imagem {
-  flex: 1;
-}
-
-.fp-imagem img {
-  width: 100%;
-  border-radius: 12px;
-  border: #002f6b solid 5px;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .fp-bloco,
-  .fp-bloco.invertido {
-    flex-direction: column;
-  }
-}
-@media (max-width: 768px) {
-  .fp-texto p,
-  .fp-bloco.texto-largo p {
-    max-width: 100%;
-  }
-}
-
-.titulos{
-  text-align: center;
-}
-
-/*Vou ver se dou uma aviadada nessa pag pq ela ta muito xoxa*/
-
-:root {
-  --azul-escuro: #0b2545; 
-  --azul-principal: #0d6efd;
-  --azul-suave: #38bdf8;
-
-  --cinza-bg: #f9f9f9; 
-}
-
-.fp-bloco:nth-child(even) {
-  background-color: #f9fcff;
-}
-
-.fp-bloco::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 15%;
-  width: 5px;
-  height: 70%;
-  background: linear-gradient(
-    to bottom,
-    #0d6efd,
-    #38bdf8
-  );
-  border-radius: 10px;
-}
-
-body {
-  font-family: 'Lexend', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 1.5px;
 }
 
 #btn-topo {
@@ -363,122 +302,4 @@ h1, h2, h3, h4, h5, h6{
 #btn-topo:hover {
   transform: translateY(-4px);
   background: linear-gradient(135deg, #0077ff, #0055aa);
-}
-
-.servicos-fpattern {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 4rem 1rem;
-
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-
-/* ===============================
-   BLOCO DE SERVIÇOS – TEXTO
-================================ */
-
-.servicos-fpattern {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 4rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-
-.servicos-fpattern {
-  background-color: #f9fbff;
-}
-
-/* bloco */
-.fp-bloco {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  padding: 3rem 2.5rem;
-  border-radius: 20px;
-  background-color: #fff;
-  position: relative;
-}
-
-/* linha decorativa */
-.fp-bloco::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 15%;
-  width: 5px;
-  height: 70%;
-  background: linear-gradient(to bottom, #0d6efd, #38bdf8);
-  border-radius: 10px;
-}
-
-/* texto */
-.fp-texto {
-  flex: 1;
-  max-width: 52ch; /* 👈 PONTO IDEAL */
-}
-
-/* títulos */
-.fp-texto h3 {
-  font-size: 2rem;
-  color: #121561;
-  margin-bottom: 1rem;
-}
-
-.fp-texto h4 {
-  margin-top: 1.6rem;
-  margin-bottom: 0.4rem;
-  color: #00336b;
-  font-weight: 500;
-}
-
-/* parágrafos */
-.fp-texto p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #07000c;
-  margin-bottom: 1rem;
-}
-
-/* introdução */
-.fp-texto .intro {
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: #002a5c;
-}
-
-/* listas */
-.fp-texto ul {
-  padding-left: 1.2rem;
-  margin-top: 0.6rem;
-}
-
-.fp-texto li {
-  margin-bottom: 0.4rem;
-}
-
-/* imagem */
-.fp-imagem {
-  flex: 1;
-}
-
-.fp-imagem img {
-  width: 100%;
-  border-radius: 16px;
-  border: 5px solid #002f6b;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-}
-
-/* responsivo */
-@media (max-width: 768px) {
-  .fp-bloco {
-    flex-direction: column;
-  }
-
-  .fp-texto {
-    max-width: 100%;
-  }
 }
