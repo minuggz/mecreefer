@@ -685,3 +685,23 @@ h1, h2, h3, h4, h5, h6{
   transform: translateY(-4px);
   background: linear-gradient(135deg, #0077ff, #0055aa);
 }
+
+
+/* ===== MENU MOBILE ===== */
+@media (max-width: 991px) {
+  .navbar-colorida .navbar-collapse {
+    background: linear-gradient(180deg, rgb(0, 47, 107), rgb(0, 75, 150));
+    padding: 1.5rem;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .navbar-colorida .nav-link {
+    color: #ffffff !important;
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+  }
+
+  .navbar-colorida .dropdown-menu {
+    background-color: #002f6b;
+  }
+}
