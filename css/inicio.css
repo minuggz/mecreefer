@@ -681,6 +681,47 @@ h1, h2, h3, h4, h5, h6{
   transition: all 0.3s ease;
 }
 
+.lang-switch-container {
+    display: flex;
+    gap: 2px;
+    background: rgba(255, 255, 255, 0.15); /* Fundo sutil */
+    padding: 3px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn {
+    text-decoration: none !important;
+    color: #ffffff !important;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Estilo para destacar qual língua está ativa */
+.lang-btn.active {
+    background: #ffffff; /* Fundo branco no ativo */
+    color: #003366 !important; /* Texto azul escuro para contraste */
+}
+
+.lang-flag {
+    width: 18px;
+    height: auto;
+    border-radius: 2px;
+    display: block;
+}
+
 #btn-topo:hover {
   transform: translateY(-4px);
   background: linear-gradient(135deg, #0077ff, #0055aa);
